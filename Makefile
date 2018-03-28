@@ -1,5 +1,5 @@
 
-report.pdf: report.rst style.yml /usr/share/fonts/ttf-carlito-ib
+report.pdf: report.rst style.yml
 	sed "s/##Date##/$$(date)/g" report.rst \
 	| rst2pdf                            \
 		--output=report.pdf              \
